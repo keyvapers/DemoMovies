@@ -1,8 +1,8 @@
 :root {
   --color-primary: #4899C2;
   --color-secondary: #8DC4D4;
-  --color-ligth: #E8C4A2;
-  --color-dark: #5D5349;
+  --color-ligth: #DBDFBC;
+  --color-dark: #616161;
 }
 
 @tailwind base;

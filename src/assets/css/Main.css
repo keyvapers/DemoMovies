@@ -1,0 +1,6 @@
+@import './Index.css';
+
+#body{
+  background-color: var(--color-ligth);
+  min-height: calc(100vh - 130px);
+}

@@ -1,0 +1,11 @@
+#breadcrumb {
+  background-color: var(--color-secondary);
+  color: var(--color-dark);
+  height: 3rem;
+  padding: 0.5rem 22px;
+}
+
+.item {
+  display: inline-block;
+  vertical-align: middle;
+}

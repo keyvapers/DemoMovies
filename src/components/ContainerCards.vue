@@ -6,15 +6,18 @@
         :description="item.description"
         :director="item.director"
         :producer="item.producer"
+        :runningTime="item.running_time"
+        :score="item.rt_score"
+        :releaseDate="item.release_date"
         :id="item.id"
       />
     </div>
-    <div class="w-full text-center py-4" v-if="options.length === 0">Not found matches</div>
+    <div class="text-center text-2xl py-4 w-full text-dark" v-if="options.length === 0">Not matches found</div>
   </div>
 </template>
 <script>
 import card from '@/components/Card.vue'
-import '@/assets/css/List.css'
+import '@/assets/css/ContainerCards.css'
 
 export default {
   name: 'ContainerCards',
