@@ -44,9 +44,6 @@ export default {
           this.error = true
         })      
     },
-    goToHome(){
-      this.$router.push('/')
-    }
   },
   created () {
     this.getMovie()

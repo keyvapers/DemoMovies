@@ -11,6 +11,11 @@ export default {
       type: String,
       default: ''
     }
+  },
+  methods: {
+    goToHome(){
+      this.$router.push('/')
+    }
   }
 }
 </script>
