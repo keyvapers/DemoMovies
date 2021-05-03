@@ -47,7 +47,21 @@ module.exports = {
         'monospace',
       ]
     },
-    colors: colors,
+    colors: {
+      primary: 'var(--color-primary)',
+      secondary: 'var(--color-secondary)',
+      ligth: 'var(--color-ligth)',
+      dark: 'var(--color-ligth)',
+      black: colors.black,
+      white: colors.white,
+      gray: colors.trueGray,
+      indigo: colors.indigo,
+      red: colors.rose,
+      yellow: colors.amber,
+      pink: colors.pink,
+      green: colors.emerald,
+      blue: colors.blue
+    },
   },
   variants: {
     extend: {},
