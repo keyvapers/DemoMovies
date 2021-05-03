@@ -1,0 +1,32 @@
+.container-cards{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  justify-content: space-evenly;
+  padding: 20px;
+}
+
+.button-paginate{
+  color: #ffff;
+  background-color:  var(--color-primary);
+  border-radius: 5px;
+  margin: 10px;
+  margin-bottom: 20px;
+  padding: 0.5rem 1rem;
+  display: inline-block;
+  width: 100px;
+}
+
+.button-paginate:focus{
+  background-color:  var(--color-secondary);
+  color: #ffff;
+  cursor: pointer;
+  outline: none;
+}
+
+.button-paginate:hover{
+  background-color:  var(--color-secondary);
+  color: #ffff;
+  cursor: pointer;
+  outline: none;
+}

@@ -1,0 +1,24 @@
+@import './Index.css';
+.button {
+  color: #ffff;
+  background-color:  var(--color-dark);
+  bottom: 1rem;
+  border-radius: 5px;
+  padding: 0.5rem;
+  position: absolute;
+  right: 1rem;
+}
+
+.button:focus{
+  background-color:  var(--color-secondary);
+  color: var(--color-dark);
+  cursor: pointer;
+  outline: none;
+}
+
+.button:hover{
+  background-color:  var(--color-secondary);
+  color: var(--color-dark);
+  cursor: pointer;
+  outline: none;
+}
