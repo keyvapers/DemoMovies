@@ -1,0 +1,30 @@
+#search-bar{
+  height: 50px;
+  padding: 10px 20px;
+}
+
+input{
+  background: transparent;
+  border-bottom: 2px solid black;
+  outline: none;
+  color: #ffff;
+}
+
+input:focus{
+  background: transparent; 
+  border-bottom: 2px solid black;
+  outline: none;
+  color: #ffff;
+}
+
+input::placeholder{
+  color: #ffff;
+}
+
+.container-cards{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  justify-content: space-evenly;
+  padding: 20px;
+}
