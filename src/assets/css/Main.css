@@ -1,6 +1,14 @@
 @import './Index.css';
 
-#body{
+#body {
   background-color: var(--color-ligth);
-  min-height: calc(100vh - 130px);
+  min-height: calc(100vh - 178px);
+}
+
+#footer {
+  background-color: var(--color-dark);
+  color: #ffff;
+  height: 3rem;
+  padding: 10px 22px;
+  text-align: center;
 }

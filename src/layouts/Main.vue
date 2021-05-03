@@ -4,6 +4,9 @@
     <div id="body" class="font-sans">
       <router-view></router-view>
     </div>
+    <div id="footer">
+      <div class="align-middle">@keyvapers</div>
+    </div>
   </div>
 </template>
 <script>

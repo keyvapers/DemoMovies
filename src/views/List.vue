@@ -2,8 +2,8 @@
   <div>
     <div id="search-bar">
       <input v-model="search" placeholder="Search" list="options">
-      <datalist id="options" v-if="autocomplete">
-        <option :value="item.title" v-for="item in options" v-bind:key="item.id" />
+      <datalist id="options" v-if="autocomplete === true">
+        <option :value="item.title" v-for="item in options" v-bind:key="item.id"/>
       </datalist>
       <span @click="search = ''" v-if="search.length > 0">
         <iconBase 
@@ -36,7 +36,7 @@ export default {
     return {
       search: "",
       movies: [],
-      autocomplete: process.env.VUE_APP_AUTOCOMPLETE
+      autocomplete: process.env.VUE_APP_AUTOCOMPLETE || false
     }
   },
   methods:{
@@ -50,9 +50,6 @@ export default {
 
         })      
     },
-    cleanSearch(){
-      console.log('clean')
-    }
   },
   created () {
     this.getMovies()
