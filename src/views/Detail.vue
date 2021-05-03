@@ -1,6 +1,6 @@
 <template>
   <div>
-    <breadcrumb :title="movie.title"/>
+    <breadcrumb :title="movie ? movie.title : ''" />
     <div v-if="error" class="text-center font-bold text-3xl p-4">Not Found</div>
     <card-complete
       v-if="!error && movie != null"
