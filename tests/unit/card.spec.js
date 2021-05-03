@@ -8,7 +8,7 @@ const data = {
   producer:'example',
   id: 'example'
 }
-const wrapper = (data = {}) => {
+const factory = (data = {}) => {
     return shallowMount(Card, {
     propsData: data
   })
@@ -36,22 +36,22 @@ describe('Card.vue', () => {
   })
 
   it('renders props.title when not passed', () => {
-    const wrapper = factory({})
+    const wrapper = factory({id: '1'})
     expect(wrapper.find('.title').text()).toMatch('--')
   })
 
   it('renders props.description when not passed', () => {
-    const wrapper = factory({})
+    const wrapper = factory({id: '1'})
     expect(wrapper.find('.description').text()).toMatch('--')
   })
 
   it('renders props.director when not passed', () => {
-    const wrapper = factory({})
+    const wrapper = factory({id: '1'})
     expect(wrapper.find('.director').text()).toMatch('--')
   })
 
   it('renders props.producer when not passed', () => {
-    const wrapper = factory({})
+    const wrapper = factory({id: '1'})
     expect(wrapper.find('.producer').text()).toMatch('--')
   })
 

@@ -13,7 +13,7 @@ const data = {
   originalTitle: 'example',
   titleRomanised: 'example',
 }
-const wrapper = (data = {}) => {
+const factory = (data = {}) => {
     return shallowMount(CardComplete, {
     propsData: data
   })
