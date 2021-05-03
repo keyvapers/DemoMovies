@@ -36,7 +36,7 @@ const router = new Router({
           component: () => import('./views/List.vue')
         },
         {
-          path: 'detail',
+          path: 'movie-*/:id',
           name: 'detail',
           component: () => import('./views/Detail.vue')
         },
