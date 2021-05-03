@@ -20,7 +20,7 @@
       <div class="w-full sm:w-1/2 sm:inline-block py-2 pl-4"><span class="font-bold">Original title romanised: </span><span class="titleRomanised">{{titleRomanised || '--'}}</span></div>
       <div class="w-full sm:w-1/2 sm:inline-block py-2 pl-4"><span class="font-bold">Director: </span><span class="director">{{director || '--'}}</span></div>
       <div class="w-full sm:w-1/2 sm:inline-block py-2 pl-4"><span class="font-bold">Producer: </span><span class="producer">{{producer || '--'}}</span></div>
-      <p class="text-justify mt-8">{{description || '--'}}</p>
+      <p class="text-justify mt-8 description">{{description || '--'}}</p>
     </div>
   </div>
 </template>

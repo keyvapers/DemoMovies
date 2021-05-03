@@ -13,7 +13,6 @@
   </div>
 </template>
 <script>
-import axios from 'axios'
 import card from '@/components/Card.vue'
 import '@/assets/css/List.css'
 
@@ -24,37 +23,20 @@ export default {
       type: String,
       default: ''
     },
+    movies:{
+      type: Array,
+      default: function () {
+        return []
+      }
+    }
   },
   components: {
     card
   },
-  data () {
-    return {
-      movies: [],
-    }
-  },
-  methods: {
-    async getMovies () {
-      const apiURL = process.env.VUE_APP_API_URL || ''
-      const url = '/films?limit=250'
-      axios.get(`${apiURL + url}`, {})
-        .then(response => {
-          this.movies = response.data
-        }).catch(() => {
-
-        })      
-    },
-    filterBy(option){
-      return (option.title || '').toLowerCase().indexOf(this.search.toLowerCase()) > -1
-    }
-  },
-  created () {
-    this.getMovies()
-  },
   computed: {
     options () {
       return this.movies.filter(option => {
-        return this.filterBy(option);
+        return (option.title || '').toLowerCase().indexOf(this.search.toLowerCase()) > -1
       });
     } 
   },
