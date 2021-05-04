@@ -58,15 +58,15 @@ export default {
     releaseDate:{
       type: String,
       default: ''
-    },
+    }
   },
   methods: {
-    goToDetail(){
+    goToDetail () {
       this.$router.push(`/movie-${this.normalize(this.title)}/${this.id}`)
     },
-    normalize(title){
-      let normalize = title.replaceAll(' ','-')
-      return normalize.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
+    normalize (title) {
+      const normalize = title.replaceAll(' ', '-')
+      return normalize.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase()
     }
   }
 }

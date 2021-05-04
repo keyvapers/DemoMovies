@@ -74,7 +74,7 @@ export default {
     titleRomanised:{
       type: String,
       default: ''
-    },
+    }
   }
 }
 </script>

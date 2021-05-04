@@ -34,7 +34,7 @@ export default {
   },
   data () {
     return {
-      search: "",
+      search: '',
       movies: [],
       autocomplete: process.env.VUE_APP_AUTOCOMPLETE || false
     }
@@ -49,7 +49,7 @@ export default {
         }).catch(() => {
 
         })      
-    },
+    }
   },
   created () {
     this.getMovies()
@@ -58,8 +58,8 @@ export default {
     options () {
       return this.movies.filter(option => {
         return (option.title || '').toLowerCase().indexOf(this.search.toLowerCase()) > -1
-      });
+      })
     } 
-  },
+  }
 }
 </script>

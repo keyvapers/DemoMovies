@@ -9,10 +9,10 @@ const data = {
   id: 'example',
   runningTime: 'example',
   score: 'example',
-  releaseDate: 'example',
+  releaseDate: 'example'
 }
 const factory = (data = {}) => {
-    return shallowMount(Card, {
+  return shallowMount(Card, {
     propsData: data
   })
 }

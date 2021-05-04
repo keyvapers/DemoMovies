@@ -43,10 +43,10 @@ export default {
         }).catch(() => {
           this.error = true
         })      
-    },
+    }
   },
   created () {
     this.getMovie()
-  },
+  }
 }
 </script>

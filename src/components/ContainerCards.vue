@@ -37,7 +37,7 @@ export default {
     },
     movies:{
       type: Array,
-      default: function () {
+      default () {
         return []
       }
     }
@@ -52,23 +52,23 @@ export default {
     card
   },
   methods:{
-    back() {   
+    back () {   
       this.page -= 1
       document.body.scrollTop = 0
-      document.documentElement.scrollTop = 0;
+      document.documentElement.scrollTop = 0
     },
-    next() {  
+    next () {  
       this.page += 1 
       document.body.scrollTop = 0
-      document.documentElement.scrollTop = 0;
-    },
+      document.documentElement.scrollTop = 0
+    }
   },
   computed: {
     options () {
       return this.movies.filter(option => {
         return (option.title || '').toLowerCase().indexOf(this.search.toLowerCase()) > -1
-      });
+      })
     } 
-  },
+  }
 }
 </script>

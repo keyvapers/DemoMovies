@@ -39,7 +39,7 @@ const router = new Router({
           path: 'movie-*/:id',
           name: 'detail',
           component: () => import('./views/Detail.vue')
-        },
+        }
       ]
     },
     

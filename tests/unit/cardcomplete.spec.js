@@ -11,10 +11,10 @@ const data = {
   score: 'example',
   releaseDate: 'example',
   originalTitle: 'example',
-  titleRomanised: 'example',
+  titleRomanised: 'example'
 }
 const factory = (data = {}) => {
-    return shallowMount(CardComplete, {
+  return shallowMount(CardComplete, {
     propsData: data
   })
 }
